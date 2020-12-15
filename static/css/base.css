@@ -1,0 +1,9 @@
+header h1 a {
+    color: rgb(209, 19, 209);
+
+}
+
+header {
+    padding-bottom: 50px;
+    background-image: url(../images/header.png);
+}

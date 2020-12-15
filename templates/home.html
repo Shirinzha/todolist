@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for todo in object_list %}
+
+    <div class="post-entry">
+        <h2>{{ todo.title }}</h2>
+        
+        <p>{{ todo.description }}</p> 
+
+        <a href="{% url 'post_edit' todo.pk%}"><p>update</p></a>
+        <a href="{% url 'post_delete' todo.pk%}"><p>delete</p></a>
+
+    </div>
+
+{% endfor %}
+{% endblock content %}
